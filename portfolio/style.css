@@ -10,3 +10,5 @@
 
 .story-gd .story-figure img{object-fit:cover;object-position:center 38%}
 @media(max-width:640px){.story-gd .story-figure img{height:auto;aspect-ratio:1.1;object-fit:cover;object-position:center}}
+/* Show the complete daisy garden photograph at its original ratio. */
+.story-gd .story-figure img{height:auto;width:100%;object-fit:contain;aspect-ratio:auto}
