@@ -53,3 +53,12 @@
 .narrative-case .case-cover.beauty{background:transparent;width:100%;max-width:960px;margin-left:auto;margin-right:auto}
 .narrative-case .case-cover.beauty img{width:100%;height:auto;object-fit:contain;border:0}
 .narrative-case .case-cover.beauty figcaption{padding-top:14px;line-height:1.8}
+
+/* Pair beauty campaign reach with its phone visual. */
+.beauty-result-spread{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);align-items:center;gap:40px;margin-top:35px;border-top:1px solid var(--line);padding-top:25px}
+.beauty-result-spread .case-metric{margin:0}
+.beauty-result-phone{max-width:250px;width:100%;justify-self:center}
+.beauty-result-phone>a{display:block;overflow:hidden}
+.beauty-result-phone img{width:200%;max-width:none;height:auto}
+.beauty-result-phone figcaption{font-size:10px;line-height:1.8;color:var(--muted);margin-top:10px}
+@media(max-width:640px){.beauty-result-spread{gap:18px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.beauty-result-spread .case-metric strong{font-size:clamp(42px,12vw,65px);letter-spacing:-2px}.beauty-result-spread .case-metric span{font-size:11px;line-height:1.7}.beauty-result-spread .case-metric small{font-size:9px;line-height:1.8}.beauty-result-phone figcaption{font-size:9px}}
