@@ -62,3 +62,75 @@
 .beauty-result-phone img{width:200%;max-width:none;height:auto}
 .beauty-result-phone figcaption{font-size:10px;line-height:1.8;color:var(--muted);margin-top:10px}
 @media(max-width:640px){.beauty-result-spread{gap:18px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.beauty-result-spread .case-metric strong{font-size:clamp(42px,12vw,65px);letter-spacing:-2px}.beauty-result-spread .case-metric span{font-size:11px;line-height:1.7}.beauty-result-spread .case-metric small{font-size:9px;line-height:1.8}.beauty-result-phone figcaption{font-size:9px}}
+
+/* Camera cover follows its natural proportions without side borders. */
+.narrative-case .case-cover.camera{background:transparent}
+.narrative-case .case-cover.camera img{width:100%;height:auto;object-fit:contain}
+
+.camera-video video{display:block;width:100%;height:auto;background:#000}
+
+/* Emphasize the measured outcomes using the editorial accent. */
+.case-metric strong{color:var(--accent)}
+
+.narrative-case .case-cover.lifestyle{background:transparent}
+.narrative-case .case-cover.lifestyle img{width:100%;height:auto;object-fit:contain}
+
+/* Camera case: photograph beside the project narrative. */
+.camera-story-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:start;margin-top:45px}
+.camera-story-layout .case-cover.camera{width:100%;margin:25px 0 0;position:sticky;top:30px}
+.camera-story-layout .story-flow{display:block;margin-top:0}
+.camera-story-layout .story-progress{display:none}
+.camera-story-layout .story-chapter{padding:20px 0 45px}
+.camera-story-layout .story-chapter h2,.camera-story-layout .story-chapter:nth-child(2) h2{font-size:clamp(23px,2.3vw,32px);line-height:1.5;margin:18px 0}
+.camera-story-layout .story-chapter>p{font-size:14px;line-height:1.95}
+.camera-story-layout .story-chapter:nth-child(2){padding-left:20px}
+@media(max-width:640px){.camera-story-layout{grid-template-columns:1fr;gap:30px;margin-top:25px}.camera-story-layout .case-cover.camera{position:static;margin:0}.camera-story-layout .story-chapter:nth-child(2){padding-left:0}}
+
+/* Compact campaign results with supporting engagement figures. */
+.beauty-result-spread{grid-template-columns:minmax(0,1fr) 180px;gap:32px;padding-top:24px;align-items:center}
+.beauty-result-phone{max-width:180px}
+.beauty-result-phone>a{height:400px;position:relative}
+.beauty-result-phone img{position:absolute;top:-52px;left:0;width:380px;max-width:none;height:auto}
+.beauty-result-spread .case-metric strong{font-size:clamp(64px,7vw,96px);white-space:nowrap;line-height:1.1}
+.beauty-secondary-metrics{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+.beauty-secondary-metrics strong{display:block;font-family:Georgia,serif;font-size:34px;font-weight:400;color:var(--accent)}
+.beauty-secondary-metrics span{display:block;font-size:12px;color:var(--muted);margin-top:8px}
+@media(max-width:640px){.beauty-result-spread{grid-template-columns:minmax(0,1fr) 130px;gap:16px}.beauty-result-phone>a{height:290px}.beauty-result-phone img{width:275px;top:-38px}.beauty-result-spread .case-metric strong{font-size:clamp(42px,11vw,64px)}.beauty-secondary-metrics{gap:10px;margin-top:18px;padding-top:14px}.beauty-secondary-metrics strong{font-size:25px}.beauty-secondary-metrics span{font-size:10px}}
+
+/* Keep reach and likes alongside one another. */
+.beauty-result-stats{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:start}
+.beauty-result-stats .beauty-secondary-metrics{display:block;margin:0;padding:0;border:0}
+.beauty-result-stats .case-metric strong,.beauty-result-stats .beauty-secondary-metrics strong{font-size:clamp(36px,4.6vw,64px);line-height:1.15;letter-spacing:-2px;white-space:nowrap}
+.beauty-result-stats .beauty-secondary-metrics span{font-size:14px;color:var(--ink);margin-top:10px}
+@media(max-width:640px){.beauty-result-spread{grid-template-columns:1fr}.beauty-result-stats{gap:16px}.beauty-result-stats .case-metric strong,.beauty-result-stats .beauty-secondary-metrics strong{font-size:clamp(42px,12vw,64px)}.beauty-result-phone{justify-self:center}.beauty-result-stats .beauty-secondary-metrics span{font-size:11px}}
+
+.beauty-result-phone>a{height:auto;overflow:visible}
+.beauty-result-phone img{position:static;width:100%;max-width:100%;height:auto;filter:drop-shadow(3px 8px 9px rgba(37,39,35,.13))}
+
+/* Give the campaign phone twice the previous display width. */
+.beauty-result-spread{grid-template-columns:minmax(0,1fr) 360px;gap:28px}
+.beauty-result-phone{max-width:360px;width:100%}
+.beauty-result-stats{grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:1000px) and (min-width:641px){.beauty-result-spread{grid-template-columns:1fr}.beauty-result-phone{justify-self:center}.beauty-result-stats{max-width:460px;width:100%}}
+@media(max-width:640px){.beauty-result-spread{grid-template-columns:1fr}.beauty-result-phone{max-width:360px;width:100%}}
+
+.story-lifestyle .story-figure img{width:100%;max-width:100%;height:auto;object-fit:contain}
+
+.growth-chart{width:100%;padding:28px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.growth-head>.mono{color:var(--muted);font-size:10px}.growth-head>strong{display:block;font-family:Georgia,serif;font-size:clamp(64px,7vw,104px);font-weight:400;line-height:1.2;color:var(--accent);margin:16px 0}.growth-head>strong span{font-size:.5em}.growth-head>p{font-size:16px;margin:0 0 30px}
+.growth-row{margin:22px 0}.growth-row>div:first-child{display:flex;justify-content:space-between;gap:15px;font-size:12px;margin-bottom:10px}.growth-row strong{font-weight:500}.growth-track{height:22px;background:#e1e3da}.growth-track>span{display:block;height:100%;background:#939a8b}.growth-row.current .growth-track>span{background:var(--accent)}.growth-chart>small{display:block;font-size:10px;line-height:1.8;color:var(--muted);margin-top:24px}.story-social{grid-template-columns:1fr 1fr;gap:70px}.story-social h3{font-size:clamp(32px,4vw,52px)}
+@media(max-width:640px){.story-social{display:flex;gap:28px}.story-social .growth-chart{order:1}.growth-head>strong{font-size:76px}}
+
+.story-social{grid-template-columns:minmax(0,1fr) 240px;gap:90px}
+.profile-preview{width:220px;max-width:100%;justify-self:center}
+.profile-preview>a{display:block}.profile-preview img{width:100%;height:auto}
+.profile-preview figcaption{font-size:12px;line-height:1.8;margin-top:15px;color:var(--muted)}.profile-preview figcaption span{display:block;font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;margin-top:4px}
+@media(max-width:640px){.story-social{display:flex;gap:30px}.profile-preview{width:160px;align-self:center;order:0}}
+
+/* Social result: a single vertical growth comparison. */
+.growth-column-plot{display:flex;align-items:flex-end;justify-content:center;gap:clamp(48px,10vw,120px);padding:38px 20px 0;border-bottom:1px solid var(--line)}
+.growth-column{display:flex;flex-direction:column;align-items:center;width:clamp(90px,16vw,160px)}
+.growth-column>strong{font-size:clamp(21px,3vw,32px);font-weight:500;margin-bottom:16px;white-space:nowrap}.growth-column>strong>span{font-size:.55em;margin-left:4px;color:var(--muted)}
+.growth-column-bar{width:100%;border-radius:3px 3px 0 0}.growth-column-bar.baseline{height:74px;background:#939a8b}.growth-column-bar.current{height:320px;background:var(--accent)}
+.growth-column-date{padding:14px 0;font-size:14px;color:var(--muted)}
+@media(max-width:640px){.growth-column-bar.current{height:240px}.growth-column-bar.baseline{height:55.38px}.growth-column-plot{gap:48px;padding:24px 10px 0}.growth-column-date{font-size:12px}}
