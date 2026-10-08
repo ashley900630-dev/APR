@@ -12,3 +12,6 @@
 @media(max-width:640px){.story-gd .story-figure img{height:auto;aspect-ratio:1.1;object-fit:cover;object-position:center}}
 /* Show the complete daisy garden photograph at its original ratio. */
 .story-gd .story-figure img{height:auto;width:100%;object-fit:contain;aspect-ratio:auto}
+/* Let the GD opening photograph fill its own natural bounds. */
+.narrative-case .case-cover.gd{background:transparent}
+.narrative-case .case-cover.gd img{width:100%;height:auto;object-fit:contain}
