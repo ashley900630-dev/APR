@@ -15,3 +15,6 @@
 /* Let the GD opening photograph fill its own natural bounds. */
 .narrative-case .case-cover.gd{background:transparent}
 .narrative-case .case-cover.gd img{width:100%;height:auto;object-fit:contain}
+/* Show the GD strategy photograph without black letterboxing. */
+.narrative-case .chapter-image{background:transparent}
+.narrative-case .chapter-image img{width:100%;height:auto;object-fit:contain}
