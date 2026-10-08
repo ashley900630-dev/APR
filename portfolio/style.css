@@ -48,3 +48,8 @@
 .creator-phone>a.creator-video-link{display:block;overflow:visible;width:100%;text-align:center;margin-top:12px;font-size:12px;border-bottom:1px solid var(--line);padding-bottom:8px}
 
 .creator-reason-title{font-size:13px;font-weight:500;color:var(--ink);margin:0 0 12px}.creator-description p{font-size:13px;line-height:1.9;margin:0 0 14px;word-break:keep-all}@media(max-width:640px){.creator-description p{font-size:11px;line-height:1.85}.creator-reason-title{font-size:12px}}
+
+/* Beauty cover follows the image proportions, with no letterboxing. */
+.narrative-case .case-cover.beauty{background:transparent;width:100%;max-width:960px;margin-left:auto;margin-right:auto}
+.narrative-case .case-cover.beauty img{width:100%;height:auto;object-fit:contain;border:0}
+.narrative-case .case-cover.beauty figcaption{padding-top:14px;line-height:1.8}
