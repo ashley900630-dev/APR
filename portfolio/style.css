@@ -18,3 +18,5 @@
 /* Show the GD strategy photograph without black letterboxing. */
 .narrative-case .chapter-image{background:transparent}
 .narrative-case .chapter-image img{width:100%;height:auto;object-fit:contain}
+/* Reduce the GD opening figure to two thirds of its previous width. */
+.narrative-case .case-cover.gd{width:66.666667%;max-width:733.333333px;margin-left:auto;margin-right:auto}
