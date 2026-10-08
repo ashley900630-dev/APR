@@ -7,3 +7,6 @@
 
 .story-beauty .story-figure img{width:100%;max-width:100%;height:auto;aspect-ratio:1.5;object-fit:cover;object-position:50% 50%}
 @media(max-width:640px){.story-beauty .story-figure img{aspect-ratio:1.4;height:auto}}
+
+.story-gd .story-figure img{object-fit:cover;object-position:center 38%}
+@media(max-width:640px){.story-gd .story-figure img{height:auto;aspect-ratio:1.1;object-fit:cover;object-position:center}}
